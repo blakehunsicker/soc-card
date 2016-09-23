@@ -88,12 +88,13 @@
 <body>
 	<div class="container">
 		<div class="col-xs-12">
+			<h3 class="page-header" style="font-family:FranklinITCProBold;"id="social-media" name="social-media">Optimize for social media</h3>
 			<div class="btn-group btn-group-justified" role="group" aria-label="...">
 			  <div class="btn-group" role="group">
-			    <button type="button" class="btn btn-default">Share a detault results message</button>
+			    <button type="button" class="btn btn-default" style="font-family:FranklinITCProBold;">Share a detault results message</button>
 			  </div>
 			  <div class="btn-group" role="group">
-			    <button type="button active" class="btn btn-default">Create a social share card</button>
+			    <button type="button make-active" class="btn btn-default active" style="font-family:FranklinITCProBold;">Create a social share card</button>
 			  </div>
 			</div>
 			<div class="row card-section">
@@ -106,6 +107,7 @@
 							<img src="assets/wplong.png" style="width:130px;float:right;margin-top:50px;"/>
 						</div>
 					</div>
+					<button type="button" class="btn btn-default" style="margin-top:20px;">Preview</button>
 				</div>
 				<div class="col-xs-5 col-xs-offset-1">
 					<form class="section">
@@ -276,6 +278,11 @@
 					  </div>
 					  </div>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.make-active').addClass('active');
+			});
+		</script>
 
 	</div>
 </body>
