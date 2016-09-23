@@ -57,6 +57,7 @@
 		}
 		.dummy-text h1 {
 			font-family:PostoniStandardBold;
+			/*margin-bottom:50px;*/
 		}
 		.dummy-text h4 {
 			font-family: FranklinITCProBold;
@@ -65,7 +66,11 @@
 			font-family: FranklinITCProLight;
 		}
 
-
+		.section {
+			padding-bottom:10px;
+			border-bottom:1px solid #c3c3c3;
+			margin-bottom:20px;
+		}
 		.formatter {
 			/*font-family: FranklinITCProBold;*/
 			color:#2f2f2f;
@@ -103,7 +108,7 @@
 					</div>
 				</div>
 				<div class="col-xs-5 col-xs-offset-1">
-					<form>
+					<form class="section">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">Result title</label>
 					    <input disabled type="email" class="form-control" id="exampleInputEmail0" placeholder="This will populate from the appropriate Results Title above">
@@ -131,7 +136,6 @@
 							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 							    <li><a href="#">H1</a></li>
 							    <li><a href="#">H2</a></li>
-							    <li><a href="#">H3</a></li>
 							  </ul>
 							</div>
 
@@ -171,19 +175,73 @@
 							</div> -->
 					  </div>
 				  </form>
-				  Alignment: 
-				  <div class="btn-group" data-toggle="buttons">
-					  <label class="btn btn-primary active">
-					    <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-align-left" aria-hidden="true"></i>
-					  </label>
-					  <label class="btn btn-primary">
-					    <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-align-center" aria-hidden="true"></i>
-					  </label>
-					  <label class="btn btn-primary">
-					    <input type="radio" name="options" id="option3" autocomplete="off"> <i class="fa fa-align-right" aria-hidden="true"></i>
-					  </label>
+				  <div class="section" style="padding-bottom:20px;">
+				  	Font color:
+					  <div class="dropdown" style="display:inline;margin-right:10px;">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    Black <i class="fa fa-square"></i>
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a>Black <i class="fa fa-square"></i></a></li>
+						    <li><a>White <i class="fa fa-square-o"></i></a></li>
+						  </ul>
+						</div>
+					  Alignment: 
+					  <div class="btn-group" data-toggle="buttons">
+						  <label class="btn btn-default active">
+						    <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-align-left" aria-hidden="true"></i>
+						  </label>
+						  <label class="btn btn-default">
+						    <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-align-center" aria-hidden="true"></i>
+						  </label>
+						  <label class="btn btn-default">
+						    <input type="radio" name="options" id="option3" autocomplete="off"> <i class="fa fa-align-right" aria-hidden="true"></i>
+						  </label>
+						</div>
+				  </div>
+
+				  <div class="section" style="padding-bottom:20px;">
+				  	WP logo:
+				  	<div class="dropdown" style="display:inline;margin-right:10px;">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    Full name
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a>Full name</a></li>
+						    <li><a>WP initials</a></li>
+						  </ul>
+						</div>
+						Color:
+						<div class="dropdown" style="display:inline;margin-right:10px;">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    Black <i class="fa fa-square"></i>
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a>Black <i class="fa fa-square"></i></a></li>
+						    <li><a>White <i class="fa fa-square-o"></i></a></li>
+						  </ul>
+						</div>
 					</div>
-				</div>
+
+					<div class="section" style="padding-bottom:20px">
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Collapsible Group Item #1
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					  </div>
 		</div>
 
 	</div>
