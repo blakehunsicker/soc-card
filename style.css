@@ -1,0 +1,12 @@
+
+
+.card {
+	width:1200px;
+	height:630px;
+	padding:64px;
+}
+
+.Result text is <H1> or <H2> depending on user choice.
+
+Social text (FranklinITCProBold) and Callout message (FranklinITCProLight) are both <h4>.
+

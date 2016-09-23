@@ -35,29 +35,20 @@
 			font-family:FranklinITCProBold;
 		}
 		.card-section {
-			margin-top:80px;
+			margin-top:50px;
 		}
 		.dummy-card {
-			width:470px;
+			position:relative;
+			width: 470px;
 			height:246px;
-			padding:5%;
+			padding:24px;
 			background:#C3C3C3;
-		}
-		.dummy-image {
-			display:inline-block;
-			width:40%;
-			height:100%;
-			background: repeating-linear-gradient(
-			  to right,
-			  #3E5364,
-			  #3E5364 10px,
-			  #4F6679 10px,
-			  #4F6679 20px
-			);
 		}
 		.dummy-text h1 {
 			font-family:PostoniStandardBold;
-			/*margin-bottom:50px;*/
+		}
+		.dummy-text h2 {
+			font-family:PostoniStandardBold;
 		}
 		.dummy-text h4 {
 			font-family: FranklinITCProBold;
@@ -65,15 +56,25 @@
 		.dummy-text h4.callout {
 			font-family: FranklinITCProLight;
 		}
+		.dummy-card .logo {
+			position:absolute;
+			bottom:24px;
+			right:24px;
+		}
+		.dummy-card .logo img {
+			max-width:180px;
+		}
 
 		.section {
-			padding-bottom:10px;
+			padding-bottom:10px;			
 			border-bottom:1px solid #c3c3c3;
 			margin-bottom:20px;
 		}
-		.formatter {
+		.format-kicker {
 			/*font-family: FranklinITCProBold;*/
 			color:#2f2f2f;
+			margin-right:15px;
+			/*margin-left:15px;*/
 		}
 		.format-dropdown {
 			margin-top:10px;
@@ -101,22 +102,89 @@
 				<div class="col-xs-6">
 					<div class="dummy-card">
 						<div class="dummy-text">
-							<h1>You know your news!</h1>
-							<h4>I got 6 out of 10</h4>
-							<h4 class="callout">Click here to play</h4>
-							<img src="assets/wplong.png" style="width:130px;float:right;margin-top:50px;"/>
+							<h2>You know your news!</h2>
+							<div class="bottom-text">
+								<h4>I got 6 out of 10</h4>
+								<h4 class="callout">Click here to play</h4>
+							</div>
+							<div class="logo">
+								<img src="assets/wplong.png" />
+							</div>
 						</div>
 					</div>
 					<button type="button" class="btn btn-default" style="margin-top:20px;">Preview</button>
 				</div>
 				<div class="col-xs-5 col-xs-offset-1">
+					<div class="section">
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Background settings <i class="fa fa-caret-down" style="float:right"></i>
+					          
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+					        <div class="section">
+					        	<span class="format-kicker">Background color:</span>
+					        	<div class="dropdown" style="display:inline;margin-right:15px;">
+										  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    <i class="fa fa-square"></i> Black
+										    <span class="caret"></span>
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a><i class="fa fa-square"></i> Black</a></li>
+										    <li><a><i class="fa fa-square" style="color:#c3c3c3;"></i> Grey</a></li>
+										    <li><a><i class="fa fa-square-o"></i> White</a></li>
+										    <li><a><i class="fa fa-square" style="color:#00B5BC;"></i> Teal</a></li>
+										    <li><a><i class="fa fa-square" style="color:#FFC300;"></i> Yello</a></li>
+										  </ul>
+										</div>
+					        	<!-- <div class="radio">
+										  <label>
+										    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										    Black <i class="fa fa-square"></i>
+										  </label>
+										</div>
+										<div class="radio active">
+										  <label>
+										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										    Grey <i class="fa fa-square" style="color:#c3c3c3;"></i>
+										  </label>
+										</div>
+										<div class="radio">
+										  <label>
+										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										    White  <i class="fa fa-square-o"></i>
+										  </label>
+										</div>
+										<div class="radio">
+										  <label>
+										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										    Teal  <i class="fa fa-square" style="color:#00B5BC;"></i>
+										  </label>
+										</div>
+										<div class="radio">
+										  <label>
+										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										    Yello  <i class="fa fa-square" style="color:#FFC300;"></i>
+										  </label>
+										</div> -->
+						      </div>
+						      <h4 style="color:#c3c3c3;">Normal image uploader here</h4>
+					    </div>
+					  </div>
+					  </div>
+					</div>
 					<form class="section">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">Result title</label>
 					    <input disabled type="email" class="form-control" id="exampleInputEmail0" placeholder="This will populate from the appropriate Results Title above">
-					    <span class="formatter">Font:</span>
+					    <span class="format-kicker">Font:</span>
 					    
-							<div class="dropdown format-dropdown" style="display:inline-block;margin-left:10px;">
+							<div class="dropdown format-dropdown" style="display:inline-block;">
 							  <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							    Postoni-Standard-Bold
 							    <span class="caret"></span>
@@ -128,9 +196,9 @@
 							  </ul>
 							</div>
 
-							<span class="formatter" style="margin-left:10px">Font size:</span>
+							<span class="format-kicker" style="margin-left:10px;">Font size:</span>
 
-					    <div class="dropdown format-dropdown" style="display:inline-block;margin-left:10px;">
+					    <div class="dropdown format-dropdown" style="display:inline-block;">
 							  <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							    H2
 							    <span class="caret"></span>
@@ -144,7 +212,7 @@
 					  </div>
 					  <div class="form-group">
 					    <label for="exampleInputPassword1">Score text</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="I got ::score::!">
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="I got ::score:: on ::headline::">
 					    <!-- Font size:
 					    <div class="radio">
 							  <label>
@@ -178,18 +246,18 @@
 					  </div>
 				  </form>
 				  <div class="section" style="padding-bottom:20px;">
-				  	Font color:
+				  	<span class="format-kicker">Font color:</span>
 					  <div class="dropdown" style="display:inline;margin-right:10px;">
 						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    Black <i class="fa fa-square"></i>
+						    <i class="fa fa-square"></i> Black
 						    <span class="caret"></span>
 						  </button>
 						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						    <li><a>Black <i class="fa fa-square"></i></a></li>
-						    <li><a>White <i class="fa fa-square-o"></i></a></li>
+						    <li><a><i class="fa fa-square"></i> Black</a></li>
+						    <li><a><i class="fa fa-square-o"></i> White</a></li>
 						  </ul>
 						</div>
-					  Alignment: 
+					  <span class="format-kicker">Alignment:</span>
 					  <div class="btn-group" data-toggle="buttons">
 						  <label class="btn btn-default active">
 						    <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-align-left" aria-hidden="true"></i>
@@ -203,8 +271,8 @@
 						</div>
 				  </div>
 
-				  <div class="section" style="padding-bottom:20px;">
-				  	WP logo:
+				  <div class="section" style="padding-bottom:20px;margin-bottom:40px;">
+				  	<span class="format-kicker">WP logo:</span>
 				  	<div class="dropdown" style="display:inline;margin-right:10px;">
 						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						    Full name
@@ -215,69 +283,18 @@
 						    <li><a>WP initials</a></li>
 						  </ul>
 						</div>
-						Color:
+						<span class="format-kicker">Color:</span>
 						<div class="dropdown" style="display:inline;margin-right:10px;">
 						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    Black <i class="fa fa-square"></i>
+						    <i class="fa fa-square"></i> Black
 						    <span class="caret"></span>
 						  </button>
 						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						    <li><a>Black <i class="fa fa-square"></i></a></li>
-						    <li><a>White <i class="fa fa-square-o"></i></a></li>
+						    <li><a><i class="fa fa-square"></i> Black</a></li>
+						    <li><a><i class="fa fa-square-o"></i> White</a></li>
 						  </ul>
 						</div>
 					</div>
-
-					<div class="section" style="padding-bottom:20px">
-					  <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" id="headingOne">
-					      <h4 class="panel-title">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          Background settings
-					          
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-					      <div class="panel-body">
-					        <div class="section">
-					        	<h5>Background color</h5>
-					        	<div class="radio">
-										  <label>
-										    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-										    Black <i class="fa fa-square"></i>
-										  </label>
-										</div>
-										<div class="radio active">
-										  <label>
-										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-										    Grey <i class="fa fa-square" style="color:#c3c3c3;"></i>
-										  </label>
-										</div>
-										<div class="radio">
-										  <label>
-										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-										    White  <i class="fa fa-square-o"></i>
-										  </label>
-										</div>
-										<div class="radio">
-										  <label>
-										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-										    Teal  <i class="fa fa-square" style="color:#00B5BC;"></i>
-										  </label>
-										</div>
-										<div class="radio">
-										  <label>
-										    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-										    Yello  <i class="fa fa-square" style="color:#FFC300;"></i>
-										  </label>
-										</div>
-						      </div>
-						      <h4 style="color:#c3c3c3;">Normal image uploader here</h4>
-					    </div>
-					  </div>
-					  </div>
-		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.make-active').addClass('active');
