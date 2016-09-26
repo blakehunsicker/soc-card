@@ -42,8 +42,39 @@
 			position:relative;
 			width: 470px;
 			height:246px;
+			/*padding:24px;*/
+			background:#c3c3c3;
+		}
+		.dummy-card-image {
+			color: #FFF;
+			text-shadow:0px 0px 12px #2A2A2A;
+			position:relative;
+			width: 470px;
+			height:246px;
+			
+			background:#c3c3c3;
+		}
+		.dummy-background {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 246px;
+			background: rgba(0,0,0,0.4);
+		}
+
+		.dummy-overlay {
+			position:relative;
+			width:470px;
+			height:246px;
 			padding:24px;
-			background:#C3C3C3;
+		}
+		.dummy-text-image {
+
+		}
+		.dummy-text {
+			/*color: #FFF;*/
+			/*text-shadow:0px 0px 12px #2a2a2a;*/
+			-webkit-font-smoothing: antialiased;
 		}
 		.dummy-text h1 {
 			font-family:PostoniStandardBold;
@@ -57,14 +88,23 @@
 		.dummy-text h4.callout {
 			font-family: FranklinITCProLight;
 		}
+		.dummy-card-image .long-logo,
+		.dummy-card-image .initials-logo {
+			position:absolute;
+			bottom:94px;
+			right:24px;
+			/*shadow:0px 0px 12px #2A2A2A;*/
+		}
 		.dummy-card .long-logo,
 		.dummy-card .initials-logo {
 			position:absolute;
 			bottom:24px;
 			right:24px;
+			/*shadow:0px 0px 12px #2A2A2A;*/
 		}
 		.dummy-card .long-logo img {
 			max-width:180px;
+			color:#FFF;
 		}
 		.dummy-card .initials-logo img {
 			max-width:36px;
@@ -75,17 +115,36 @@
 </head>
 <body>
 
+	<div class="dummy-card-image dummy-card" style="background-image:url(https://img.washingtonpost.com/rf/image_742w/2010-2019/WashingtonPost/2016/09/25/Others/Images/2016-09-25/journey09263150_copy1474811000.jpg);background-size:472px 316px">
+		<div class="dummy-background">
+			<div class="dummy-overlay">
+				<div class="dummy-text" style="margin-top:45px;">
+					<h2>You know your news!</h2>
+					<div class="bottom-text">
+						<h4>I got 6 out of 10</h4>
+						<h4 class="callout">Click here to play</h4>
+					</div>
+					<div class="long-logo">
+						<img src="assets/wp-long-white.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div style="margin-top:40px">
 		Regular text
 		<div class="dummy-card">
-			<div class="dummy-text" style="margin-top:55px;">
-				<h2>You know your news!</h2>
-				<div class="bottom-text">
-					<h4>I got 6 out of 10</h4>
-					<h4 class="callout">Click here to play</h4>
-				</div>
-				<div class="initials-logo">
-					<img src="assets/wp.png" />
+			<div class="dummy-overlay">
+				<div class="dummy-text" style="margin-top:55px;">
+					<h2>You know your news!</h2>
+					<div class="bottom-text">
+						<h4>I got 6 out of 10</h4>
+						<h4 class="callout">Click here to play</h4>
+					</div>
+					<div class="initials-logo">
+						<img src="assets/wp.png" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -93,14 +152,16 @@
 	<div style="margin-top:40px">
 		Large text
 		<div class="dummy-card">
-			<div class="dummy-text" style="margin-top:45px;">
-				<h1>You know your news!</h1>
-				<div class="bottom-text">
-					<h4>I got 6 out of 10</h4>
-					<h4 class="callout">Click here to play</h4>
-				</div>
-				<div class="long-logo">
-					<img src="assets/wplong.png" />
+			<div class="dummy-overlay">
+				<div class="dummy-text" style="margin-top:45px;">
+					<h1>You know your news!</h1>
+					<div class="bottom-text">
+						<h4>I got 6 out of 10</h4>
+						<h4 class="callout">Click here to play</h4>
+					</div>
+					<div class="long-logo">
+						<img src="assets/wplong.png" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -108,14 +169,16 @@
 	<div style="margin-top:40px;margin-bottom:40px;">
 		vertical align (note-not perfect)
 		<div class="dummy-card">
-			<div class="dummy-text" style="margin-top:35px;">
-				<h2>You know your news! Congratulations and keep it up</h2>
-				<div class="bottom-text">
-					<h4>I got 6 out of 10</h4>
-					<h4 class="callout">Click here to play</h4>
-				</div>
-				<div class="long-logo">
-					<img src="assets/wplong.png" />
+			<div class="dummy-overlay">
+				<div class="dummy-text" style="margin-top:35px;">
+					<h2>You know your news! Congratulations and keep it up</h2>
+					<div class="bottom-text">
+						<h4>I got 6 out of 10</h4>
+						<h4 class="callout">Click here to play</h4>
+					</div>
+					<div class="long-logo">
+						<img src="assets/wplong.png" />
+					</div>
 				</div>
 			</div>
 		</div>
