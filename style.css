@@ -6,7 +6,18 @@
 	padding:64px;
 }
 
-.Result text is <H1> or <H2> depending on user choice.
+The demo card in the admin has 470px x 246px dimensions, which is one of the common sizes used on Facebook. Please export the image at the larger ratio of 600px x 315px. Please maintain the text sizes, padding and other settings outlined below.
+
+The three text divs should be vertically aligned to the center of the card.
+
+Result text is <H1> or <H2> depending on user choice-- however, if the result text is longer than 45 characters then the text should be <h2> to avoid a 3 line card.
 
 Social text (FranklinITCProBold) and Callout message (FranklinITCProLight) are both <h4>.
 
+The Wapo logo is position:absolute and has a bottom and right parameters are equal to the card padding (which at width:470 is 24px).
+Full wapo logo {
+	max-width:180px;
+}
+Abbrev. wapo logo {
+	max-width:36px;
+}
