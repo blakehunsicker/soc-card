@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/d7f4e47923.js"></script>
+	<style type="text/css">
+		@font-face{
+				font-family:FranklinITCProBold;
+				src: url('assets/fonts/Franklin-ITC-Pro-Bold/e9e4c4dc-e548-4fef-9aa1-80c9cd0f02ce-3.woff');
+			}
+			@font-face{
+				font-family:FranklinITCProLight;
+				src: url('assets/fonts/Franklin-ITC-Pro-Light/b147bee6-eb48-46e1-86e1-2538a46794b6-3.woff');
+			}
+			@font-face{
+				font-family:FranklinITCProThin;
+				src: url('assets/fonts/Franklin-ITC-Pro-Thin/56bcaf21-92ef-486a-836d-19f261762e57-3.woff');
+			}
+			@font-face{
+				font-family:Postoni-Standard-Regular;
+				src: url('assets/fonts/Postoni-Standard-Regular/PostoniStandard-Regular.woff');
+			}
+			@font-face{
+				font-family:PostoniStandardBold;
+				src: url('assets/fonts/Postoni-Standard/Postoni-Standard-Bold/PostoniStandard-Bold.woff');
+			}
+		.body {
+			font-family:FranklinITCProBold;
+		}
+		.card-section {
+			margin-top:80px;
+		}
+
+		.dummy-card {
+			position:relative;
+			width:600px;
+			height:315px;
+			/*padding:24px;*/
+			background:#c3c3c3;
+		}
+		.dummy-card-image {
+			color: #FFF;
+			text-shadow:0px 0px 12px #2A2A2A;
+			position:relative;
+			width:600px;
+			height:315px;
+			background:#c3c3c3;
+			background-size:600px 400px;
+		}
+		.dummy-background {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height:315px;
+			background: rgba(0,0,0,0.5);
+		}
+
+		.dummy-overlay {
+			position:relative;
+			width:600px;
+			height:315px;
+			padding:24px;
+		}
+		.dummy-text-image .dummy-text {
+			color:#FFF;
+		}
+		.dummy-text {
+			/*color: #FFF;*/
+			/*text-shadow:0px 0px 12px #2a2a2a;*/
+			-webkit-font-smoothing: antialiased;
+		}
+		.dummy-text h1 {
+			font-family:PostoniStandardBold;
+			font-size:48px;
+		}
+		.dummy-text h2 {
+			font-family:PostoniStandardBold;
+			font-size:42px;
+		}
+		.dummy-text h4 {
+			font-family: FranklinITCProBold;
+			font-size:20px;
+		}
+		.dummy-text h4.callout {
+			font-family: FranklinITCProLight;
+		}
+		.dummy-card-image .long-logo,
+		.dummy-card-image .initials-logo {
+			position:absolute;
+			bottom:94px;
+			right:24px;
+			/*shadow:0px 0px 12px #2A2A2A;*/
+		}
+		.dummy-caption {
+			position:absolute;
+			bottom:24px;
+			left:24px;
+			font-size:12px;
+			color:#c3c3c3;
+			text-shadow: none;
+			
+		}
+		.dummy-card .long-logo,
+		.dummy-card .initials-logo {
+			position:absolute;
+			bottom:24px;
+			right:24px;
+			/*shadow:0px 0px 12px #2A2A2A;*/
+		}
+		.dummy-card .long-logo img {
+			max-width:180px;
+			color:#FFF;
+		}
+		.dummy-card .initials-logo img {
+			max-width:36px;
+		}
+
+	
+	</style>
+</head>
+<body>
+	<div class="col-md-offset-1">
+		<div class="dummy-card-image dummy-card" style="background-image:url(https://img.washingtonpost.com/rf/image_742w/2010-2019/WashingtonPost/2016/09/25/Others/Images/2016-09-25/journey09263150_copy1474811000.jpg);height:315px;width:600px;background-size:600px 401px">
+			<div class="dummy-background">
+				<div class="dummy-overlay">
+					<div class="dummy-text" style="margin-top:70px;">
+						<h2>You know your news!</h2>
+						<div class="bottom-text">
+							<h4>I got 6 out of 10</h4>
+							<h4 class="callout">Click here to play</h4>
+						</div>
+						<div class="dummy-caption">
+							(John Moore/Getty Images)
+						</div>
+						<div class="long-logo">
+							<img src="assets/wp-long-white.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="summary col-md-5 col-md-offset-1">
+			<h4><strong>Styles</strong></h4>
+			<samp>
+				The card
+			</samp>
+			<br>
+			<code>
+				padding:24px
+				<br>
+				width:600px
+				<br>
+				height:315px
+				<br>
+				<br>
+			</code>
+			<samp>
+				Results title ("You know your news!")
+			</samp>
+			<br>
+			<code>
+				font-family:PostoniStandardBold, Postoni-standard, FranklinITCProBold
+				<br>
+				margin-top:20px
+				<br>
+				margin-bottom:10px
+				<br>
+				line-height:1.1
+				<br>
+			</code>
+			<samp>
+				Results title ("You know your news!") <strong>H1</strong>
+				<br>
+			</samp>
+			<code>
+				font-size: 48px
+				<br>
+			</code>
+			<samp>
+				Results title ("You know your news!") <strong>H2</strong>
+				<br>
+			</samp>
+			<code>
+				font-size: 42px
+				<br>
+				<br>
+			</code>
+			<samp>
+				Score text ("I got 6 out of 10") && Callout message ("Click here to play")
+				<br>
+			</samp>
+			<code>
+				font-size: 20px
+				<br> 
+				 margin-top:10px
+				<br> 
+				 margin-bottom:10px
+				<br>
+				<br>
+			</code>
+			<samp>
+				Callout message ("I got 6 out of 10")
+				<br>
+			</samp>
+			<code>
+				font-family:FranklinITCProBold
+				<br>
+				<br>
+			</code>
+			<samp>
+				Callout message ("Click here to play")
+				<br>
+			</samp>
+			<code>
+				font-family:FranklinITCProLight
+				<br>
+				<br>
+			</code>
+			<samp>
+				Image caption
+				<br>
+			<code>
+				font-size:12px
+				<br>
+			</code>
+			<samp>
+				Image caption (when text is white)
+				<br>
+			<code>
+				color:#F2F2F2
+				<br>
+			</code>
+			<samp>
+				Image caption (when text is black)
+				<br>
+			<code>
+				color:#333333
+				<br>
+				<br>
+			</code>
+			<samp>
+				Washington Post logos <strong>Full</strong>
+				<br>
+			</samp>
+			<code>
+				max-width: 180px
+				<br>
+				<br>
+			</code>
+			<samp>
+				Washington Post logos <strong>Abbreviated</strong>
+				<br>
+			</samp>
+			<code>
+				max-width: 36px
+				<br>
+				<br>
+			</code>
+		</div>
+		<div class="summary col-md-5">
+			<h4><strong>Things to remember</strong></h4>
+			<samp>
+				<strong>When the user uploads a background image:</strong>
+				<br>
+				<br>
+				Apply <code>text-shadow:0px 0px 12px #AAA;</code> to all text except the caption.
+				<br>
+				<br>
+				Enable the image overlay dropdown, which will (unless you know a better way) control the opacity of a <code>#000</code> overlay on top of the image.
+				<br><br>
+				The options are:
+				<br>
+				<strong>Dark</strong>: <code>background:rgba(0,0,0,0.5)</code>
+				<br>
+				<strong>Medium</strong>: <code>background:rgba(0,0,0,0.25)</code>
+				<br>
+				<strong>Light</strong>: <code>background:rgba(0,0,0,0.1)</code>
+				<br>
+				<strong>None</strong>: <code>background:rgba(0,0,0,0.0)</code>
+				<br>
+				<br>
+				<strong>Background colors (only applicable when no image is uploaded):</strong>
+				<br>
+				<br>
+				<i class="fa fa-square" style="color:#000;"></i> <strong>Black:</strong> <code>#000000</code>
+				<br>
+				<i class="fa fa-square" style="color:#C3C3C3;"></i> <strong>Grey:</strong> <code>#C3C3C3</code>
+				<br>
+				<i class="fa fa-square-o"></i> <strong>White:</strong> <code>#FFFFFF</code>
+				<br>
+				<i class="fa fa-square" style="color:#00B5BC;"></i> <strong>Teal:</strong> <code>#00B5BC</code>
+				<br>
+				<i class="fa fa-square" style="color:#FFC300;"></i> <strong>Yellow:</strong> <code>#FFC300</code>
+			</samp>
+		</div>
+	</div>
+	<div class="col-xs-offset-1">
+		<div style="margin-top:40px">
+			Regular text
+			<div class="dummy-card">
+				<div class="dummy-overlay">
+					<div class="dummy-text" style="margin-top:70px;">
+						<h2>You know your news!</h2>
+						<div class="bottom-text">
+							<h4>I got 6 out of 10</h4>
+							<h4 class="callout">Click here to play</h4>
+						</div>
+						<div class="initials-logo">
+							<img src="assets/wp.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:40px">
+			Large text
+			<div class="dummy-card">
+				<div class="dummy-overlay">
+					<div class="dummy-text" style="margin-top:70px;">
+						<h1>You know your news!</h1>
+						<div class="bottom-text">
+							<h4>I got 6 out of 10</h4>
+							<h4 class="callout">Click here to play</h4>
+						</div>
+						<div class="long-logo">
+							<img src="assets/wplong.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:40px;margin-bottom:40px;">
+			<div class="dummy-card">
+				<div class="dummy-overlay">
+					<div class="dummy-text" style="margin-top:35px;">
+						<h2>You know your news! Congratulations and keep it up</h2>
+						<div class="bottom-text">
+							<h4>I got 6 out of 10</h4>
+							<h4 class="callout">Click here to play</h4>
+						</div>
+						<div class="long-logo">
+							<img src="assets/wplong.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+</body>
+
+
+
+
+
