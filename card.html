@@ -66,7 +66,8 @@
 			position:relative;
 			width:600px;
 			height:315px;
-			padding:24px;
+			/*padding:24px;*/
+			padding-left:33px;
 		}
 		.dummy-text-image .dummy-text {
 			color:#FFF;
@@ -76,20 +77,35 @@
 			/*text-shadow:0px 0px 12px #2a2a2a;*/
 			-webkit-font-smoothing: antialiased;
 		}
+		.top-text {
+			position:absolute;
+			left:33px;
+			top:42.5px;
+		}
+		.results-text {
+			/*margin-top: 0px;*/
+		}
 		.dummy-text h1 {
 			font-family:PostoniStandardBold;
 			font-size:48px;
+			margin-top: 0px;
 		}
 		.dummy-text h2 {
 			font-family:PostoniStandardBold;
 			font-size:42px;
+			margin-top: 0px;
 		}
 		.dummy-text h4 {
 			font-family: FranklinITCProBold;
 			font-size:20px;
 		}
+		.dummy-text h4.score-text {
+		}
 		.dummy-text h4.callout {
 			font-family: FranklinITCProLight;
+			position:absolute;
+			bottom:42.5px;
+			left:33px;
 		}
 		.dummy-card-image .long-logo,
 		.dummy-card-image .initials-logo {
@@ -100,8 +116,8 @@
 		}
 		.dummy-caption {
 			position:absolute;
-			bottom:24px;
-			left:24px;
+			bottom:8px;
+			left:12px;
 			font-size:12px;
 			color:#c3c3c3;
 			text-shadow: none;
@@ -110,8 +126,8 @@
 		.dummy-card .long-logo,
 		.dummy-card .initials-logo {
 			position:absolute;
-			bottom:24px;
-			right:24px;
+			bottom:8px;
+			right:18px;
 			/*shadow:0px 0px 12px #2A2A2A;*/
 		}
 		.dummy-card .long-logo img {
@@ -130,12 +146,12 @@
 		<div class="dummy-card-image dummy-card" style="background-image:url(https://img.washingtonpost.com/rf/image_742w/2010-2019/WashingtonPost/2016/09/25/Others/Images/2016-09-25/journey09263150_copy1474811000.jpg);height:315px;width:600px;background-size:600px 401px">
 			<div class="dummy-background">
 				<div class="dummy-overlay">
-					<div class="dummy-text" style="margin-top:70px;">
-						<h2>You know your news!</h2>
-						<div class="bottom-text">
-							<h4>I got 6 out of 10</h4>
-							<h4 class="callout">Click here to play</h4>
+					<div class="dummy-text">
+						<div class="top-text">
+							<h2 class="results-text">You know your news!</h2>
+							<h4 class="score-text">I got 6 out of 10</h4>
 						</div>
+						<h4 class="callout">Click here to play</h4>
 						<div class="dummy-caption">
 							(John Moore/Getty Images)
 						</div>
@@ -155,7 +171,7 @@
 			</samp>
 			<br>
 			<code>
-				padding:24px
+				padding:42.5px 33px 42.5px 33px
 				<br>
 				width:600px
 				<br>
@@ -169,8 +185,6 @@
 			<br>
 			<code>
 				font-family:PostoniStandardBold, Postoni-standard, FranklinITCProBold
-				<br>
-				margin-top:20px
 				<br>
 				margin-bottom:10px
 				<br>
@@ -200,10 +214,6 @@
 			</samp>
 			<code>
 				font-size: 20px
-				<br> 
-				 margin-top:10px
-				<br> 
-				 margin-bottom:10px
 				<br>
 				<br>
 			</code>
@@ -229,6 +239,12 @@
 				Image caption
 				<br>
 			<code>
+				position:absolute
+				<br>
+				bottom:8px
+				<br>
+				left:12px
+				<br>
 				font-size:12px
 				<br>
 			</code>
@@ -245,6 +261,18 @@
 			<code>
 				color:#333333
 				<br>
+				<br>
+			</code>
+			<samp>
+				Washington Post logos
+				<br>
+			</samp>
+			<code>
+				position:absolute
+				<br>
+				bottom:8px
+				<br>
+				right:18px
 				<br>
 			</code>
 			<samp>
@@ -307,13 +335,21 @@
 				<br>
 				<i class="fa fa-square" style="color:#000;"></i> <strong>Black:</strong> <code>#000000</code>
 				<br>
-				<i class="fa fa-square" style="color:#C3C3C3;"></i> <strong>Grey:</strong> <code>#C3C3C3</code>
+				<i class="fa fa-square" style="color:#C3C7CE;"></i> <strong>Light Gray:</strong> <code>#C3C7CE</code>
 				<br>
 				<i class="fa fa-square-o"></i> <strong>White:</strong> <code>#FFFFFF</code>
 				<br>
-				<i class="fa fa-square" style="color:#00B5BC;"></i> <strong>Teal:</strong> <code>#00B5BC</code>
+				<i class="fa fa-square" style="color:#C8BEA1;"></i> <strong>Khaki:</strong> <code>#C8BEA1</code>
 				<br>
-				<i class="fa fa-square" style="color:#FFC300;"></i> <strong>Yellow:</strong> <code>#FFC300</code>
+				<i class="fa fa-square" style="color:#1955A5;"></i> <strong>Blue:</strong> <code>#1955A5</code>
+				<br>
+				<i class="fa fa-square" style="color:#00B0E7;"></i> <strong>Light Blue:</strong> <code>#00B0E7</code>
+				<br>
+				<i class="fa fa-square" style="color:#9E0B0F;"></i> <strong>Dark Red:</strong> <code>#9E0B0F</code>
+				<br>
+				<i class="fa fa-square" style="color:#FFC20E;"></i> <strong>Gold:</strong> <code>#FFC20E</code>
+				<br>
+				<i class="fa fa-square" style="color:#03D6DD;"></i> <strong>Aqua:</strong> <code>#03D6DD</code>
 			</samp>
 		</div>
 	</div>

@@ -58,14 +58,15 @@
 			left: 0;
 			top: 0;
 			height:315px;
-			background: rgba(0,0,0,0.25);
+			background: rgba(0,0,0,0.5);
 		}
 
 		.dummy-overlay {
 			position:relative;
 			width:600px;
 			height:315px;
-			padding:24px;
+			/*padding:24px;*/
+			padding-left:33px;
 		}
 		.dummy-text-image .dummy-text {
 			color:#FFF;
@@ -75,20 +76,35 @@
 			/*text-shadow:0px 0px 12px #2a2a2a;*/
 			-webkit-font-smoothing: antialiased;
 		}
+		.top-text {
+			position:absolute;
+			left:33px;
+			top:42.5px;
+		}
+		.results-text {
+			/*margin-top: 0px;*/
+		}
 		.dummy-text h1 {
 			font-family:PostoniStandardBold;
 			font-size:48px;
+			margin-top: 0px;
 		}
 		.dummy-text h2 {
 			font-family:PostoniStandardBold;
 			font-size:42px;
+			margin-top: 0px;
 		}
 		.dummy-text h4 {
 			font-family: FranklinITCProBold;
 			font-size:20px;
 		}
+		.dummy-text h4.score-text {
+		}
 		.dummy-text h4.callout {
 			font-family: FranklinITCProLight;
+			position:absolute;
+			bottom:42.5px;
+			left:33px;
 		}
 		.dummy-card-image .long-logo,
 		.dummy-card-image .initials-logo {
@@ -99,18 +115,18 @@
 		}
 		.dummy-caption {
 			position:absolute;
-			bottom:24px;
-			left:24px;
+			bottom:8px;
+			left:12px;
 			font-size:12px;
-			color:#F2F2F2;
+			color:#c3c3c3;
 			text-shadow: none;
 			
 		}
 		.dummy-card .long-logo,
 		.dummy-card .initials-logo {
 			position:absolute;
-			bottom:24px;
-			right:24px;
+			bottom:8px;
+			right:18px;
 			/*shadow:0px 0px 12px #2A2A2A;*/
 		}
 		.dummy-card .long-logo img {
@@ -120,6 +136,7 @@
 		.dummy-card .initials-logo img {
 			max-width:36px;
 		}
+
 
 		.section {
 			padding-bottom:10px;			
@@ -159,12 +176,12 @@
 					<div class="dummy-card-image dummy-card" style="background-image:url(https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/09/14/Editorial-Opinion/Images/591864400-1609.jpg);">
 							<div class="dummy-background">
 								<div class="dummy-overlay">
-									<div class="dummy-text" style="margin-top:70px;">
-										<h2>You know your news!</h2>
-										<div class="bottom-text">
-											<h4>I got 6 out of 10</h4>
-											<h4 class="callout">Click here to play</h4>
+									<div class="dummy-text">
+										<div class="top-text">
+											<h2 class="results-text">You know your news!</h2>
+											<h4 class="score-text">I got 6 out of 10</h4>
 										</div>
+										<h4 class="callout">Click here to play</h4>
 										<div class="dummy-caption">
 											(John Moore/Getty Images)
 										</div>
